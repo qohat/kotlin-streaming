@@ -48,6 +48,7 @@ logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "lo
 kotlin-gradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 detekt-gradle = { module = "io.gitlab.arturbosch.detekt:detekt-gradle-plugin", version.ref = "detekt" }
 testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testcontainers" }
+testcontainers-kafka = { module = "org.testcontainers:kafka", version.ref = "testcontainers" }
 hikari = { module = "com.zaxxer:HikariCP", version.ref="hikari" }
 postgresql = { module="org.postgresql:postgresql", version.ref="postgresql" }
 kotlin-kafka = { module="io.github.nomisrev:kotlin-kafka", version.ref="kafka" }
@@ -72,7 +73,7 @@ kotest = [
     "kotest-property",
     "kotest-runnerJUnit5",
     "kotest-arrow",
-    "kotest-testcontainers"
+    "kotest-testcontainers",
 ]
 
 [plugins]
